@@ -1,9 +1,18 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search city..." name="city" [(ngModel)]="cityName">
+  </form>
+</div>
+
 <div class='container' *ngIf="weatherData" >
   <div class="upper-data">
-    <img src='../assets/spring.jpg' alt='' *ngIf="weatherData.current.temp_c  > 15">
-    <img src='../assets/winter night.jpg' alt='' *ngIf="weatherData.current.temp_c  <= 15">
+    <img src='../assets/spring.jpg' alt='' *ngIf="weatherData.current.temp_c > 15">
+    <img src='../assets/winter night.jpg' alt='' *ngIf="weatherData.current.temp_c <= 15">
     <div class="wheather-data">
-      <div class="location">{{weatherData.location.name}}</div>
+      <div class="location">{{weatherData.location.name}}
+        <h6>{{weatherData.location.country}}</h6>
+      </div>
+
       <div class="temperature">{{weatherData.current.temp_c | number: '1.0-0' }}°C</div>
     </div>
   </div>
@@ -16,19 +25,19 @@
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/cold.png" alt="">
-          <span>min</span>
+          <span>precipitation</span>
         </div>
         <div class="info-block-value">
-
+          {{weatherData.current.precip_mm}} mm
         </div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/hot.png" alt="">
-          <span>max</span>
+          <img src="../assets/sunny-icon.png" alt="">
+          <span>uv</span>
         </div>
         <div class="info-block-value">
-
+          {{weatherData.current.uv}}
         </div>
       </div>
       <div class="info-block">
