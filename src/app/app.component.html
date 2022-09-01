@@ -24,8 +24,8 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/cold.png" alt="">
-          <span>precipitation</span>
+          <img src="../assets/rain.png" alt="">
+          <span>rain</span>
         </div>
         <div class="info-block-value">
           {{weatherData.current.precip_mm}} mm
@@ -33,7 +33,7 @@
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/sunny-icon.png" alt="">
+          <img src="../assets/uv.png" alt="">
           <span>uv</span>
         </div>
         <div class="info-block-value">
@@ -42,7 +42,7 @@
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/dots.png" alt="">
+          <img src="../assets/level.png" alt="">
           <span>humidity</span>
         </div>
         <div class="info-block-value">
@@ -51,7 +51,7 @@
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/cloud with wind.png" alt="">
+          <img src="../assets/wind.png" alt="">
           <span>wind</span>
         </div>
         <div class="info-block-value">
@@ -62,60 +62,4 @@
 
   </div>
 </div>
-
-<!-- <div class='container'>
-  <div class="upper-data">
-    <img src='../assets/spring.jpg' alt='' *ngIf="14 > 15">
-    <img src='../assets/winter night.jpg' alt='' *ngIf="14 < 15">
-    <div class="wheather-data">
-      <div class="location">Argentina</div>
-      <div class="temperature">{{ 14.40 | number: '1.0-0' }}°C</div>
-    </div>
-  </div>
-
-  <div class="lower-data">
-    <div class="more-info-label">
-      More information
-    </div>
-    <div class="more-info-container">
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/cold.png" alt="">
-          <span>min</span>
-        </div>
-        <div class="info-block-value">
-          10°C
-        </div>
-      </div>
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/hot.png" alt="">
-          <span>max</span>
-        </div>
-        <div class="info-block-value">
-          15°C
-        </div>
-      </div>
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/dots.png" alt="">
-          <span>humidity</span>
-        </div>
-        <div class="info-block-value">
-          60%
-        </div>
-      </div>
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/cloud with wind.png" alt="">
-          <span>wind</span>
-        </div>
-        <div class="info-block-value">
-          11 km/h
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div> -->
 <router-outlet></router-outlet>

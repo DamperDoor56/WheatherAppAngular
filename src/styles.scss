@@ -1,6 +1,6 @@
 
-  $blue1: #3C429E;
-  $blue-2: #4C52AD;
+  $blue1: rgb(53, 49, 49);
+  $blue-2: rgba(17, 17, 17, 0.733);
   $yellow-1: #FAC742;
   $white: snow;
   $grey-1: #ededed;
@@ -88,8 +88,7 @@ body{
       .more-info-container{
         flex: 1;
         background-color: $shadow-light;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius:20px;
+        border-radius: 20px;
         margin-top: 1rem;
 
 
@@ -110,7 +109,7 @@ body{
             align-items: center;
 
             img{
-              width: 2rem;
+              width: 2.5rem;
             }
             span{
               color: $white;
@@ -137,6 +136,7 @@ body{
   text-align: center;
 
   input{
+  width: 100%;
   background-color: $shadow-light;
   outline: none;
   border: none;
@@ -146,3 +146,13 @@ body{
   font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width:480px){
+  body{
+    .container{
+      width: 80vw;
+    }
+  }
+
+}
+
