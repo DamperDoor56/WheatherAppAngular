@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  weatherApiBaseUrl: 'https://open-weather13.p.rapidapi.com/city/landon',
+  weatherApiBaseUrl: 'https://weatherapi-com.p.rapidapi.com/future.json?q=London&dt=2022-12-25',
   XRapidAPIHostHeaderName: 'X-RapidAPI-Host',
-  XRapidAPIHostHeaderValue: 'open-weather13.p.rapidapi.com',
+  XRapidAPIHostHeaderValue: 'weatherapi-com.p.rapidapi.com',
   XRapidAPIKeyHeaderName: 'X-RapidAPI-Key',
   XRapidAPIKeyHeaderValue: 'db9519c257mshfd63b88785770fdp1acd98jsn5bc2c9ca9dde'
 };
