@@ -45,3 +45,5 @@ export interface Condition {
   icon: string
   code: number
 }
+
+

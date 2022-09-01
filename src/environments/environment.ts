@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  weatherApiBaseUrl: 'https://weatherapi-com.p.rapidapi.com/future.json?q=London&dt=2022-12-25',
+  weatherApiBaseUrl: 'https://weatherapi-com.p.rapidapi.com/current.json',
   XRapidAPIHostHeaderName: 'X-RapidAPI-Host',
   XRapidAPIHostHeaderValue: 'weatherapi-com.p.rapidapi.com',
   XRapidAPIKeyHeaderName: 'X-RapidAPI-Key',
