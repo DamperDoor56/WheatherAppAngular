@@ -1,5 +1,5 @@
 # WheatherAppAngular
-
+# Watch it deployed [Here](https://weather-angular-app-4cd3e.web.app)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
